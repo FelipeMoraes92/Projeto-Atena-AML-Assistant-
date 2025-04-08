@@ -1,0 +1,9 @@
+{
+  "name": "aml-assistant",
+  "version": "1.0.0",
+  "description": "Chrome extension for AML analysis using OpenAI",
+  "main": "popup.js",
+  "dependencies": {
+    "openai": "^4.28.0"
+  }
+} 

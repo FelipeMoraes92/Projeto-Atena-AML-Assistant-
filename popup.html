@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AML Analysis Assistant</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 500px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      min-height: 200px;
+      font-family: monospace;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      display: none;
+    }
+    #result p {
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+    .header {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>AML Analysis Assistant</h2>
+    <p>Cole os dados formatados abaixo para análise</p>
+  </div>
+  <div class="form-group">
+    <textarea id="analysisData" placeholder="Cole aqui os dados formatados para análise..."></textarea>
+  </div>
+  <button id="analyze">Analisar</button>
+  <div id="result"></div>
+  <script src="popup.js"></script>
+</body>
+</html> 
